@@ -240,6 +240,7 @@ def main():
     server = None
     try:
         # Make calls to correct analyzer subcommand functions
+        # supported: profile and analyze
         if args.subcommand == 'profile' or args.subcommand == 'analyze':
 
             if args.subcommand == 'profile' and not config.model_repository:
